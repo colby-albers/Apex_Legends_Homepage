@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<style>
+    button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    }
+
+    button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    z-index: -1;
+    }
+
+    button:hover, button:focus {
+    color: white;
+    }
+
+    button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    }
+
+    button:active {
+    transform: scale(0.9);
+    }
+
+    #background{
+        background-image: url("static/red_and_white_background.jpg");
+        width: 100%;
+        height: 100%;
+    }
+
+
+    h6,h3{
+        font-weight: bold;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2, p{
+        font-weight: bolder;
+        font-size: xx-large;
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <div class="row w-100">
+            <div class="col-4 d-flex justify-content-start align-items-center">
+            <img src="static/apex_logo.png" width="50" height="50" alt="Apex Legends logo">
+            </div>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+            <h2 class="header text-danger">APEX LEGENDS</h2>
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="static/apex_predator.jpg" width="50" height="50" alt="Sign in icon">
+            </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle text-danger" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Legends
+                </button>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Ash</a>
+                <a class="dropdown-item" href="#">Bangalore</a>
+                <a class="dropdown-item" href="#">Bloodhound</a>
+                <a class="dropdown-item" href="#">Catalyst</a>
+                <a class="dropdown-item" href="#">Caustic</a>
+                <a class="dropdown-item" href="#">Crypto</a>
+                <a class="dropdown-item" href="#">Fuse</a>
+                <a class="dropdown-item" href="#">Gibraltar</a>
+                <a class="dropdown-item" href="#">Horizon</a>
+                <a class="dropdown-item" href="#">Lifeline</a>
+                <a class="dropdown-item" href="#">Loba</a>
+                <a class="dropdown-item" href="#">Mad Maggie</a>
+                <a class="dropdown-item" href="#">Mirage</a>
+                <a class="dropdown-item" href="#">New Castle</a>
+                <a class="dropdown-item" href="#">Octane</a>
+                <a class="dropdown-item" href="#">Pathfinder</a>
+                <a class="dropdown-item" href="#">Rampart</a>
+                <a class="dropdown-item" href="#">Revenant</a>
+                <a class="dropdown-item" href="#">Seer</a>
+                <a class="dropdown-item" href="#">Valkyrie</a>
+                <a class="dropdown-item" href="#">Vantage</a>
+                <a class="dropdown-item" href="#">Wattson</a>
+                <a class="dropdown-item" href="#">Wraith</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+<div class="background" style="background-image: url('static/red-wall-with-white-spray-background.jpg');">
+    <div class="intro" d-flex justify-content-center align-items-center>
+        <h3>Welcome to the Outlands!</h3> 
+        <h6>Listed below are all of the current Legends currently battling it out for the chance to call themselves Apex Legends!</h6>
+    </div>
+
+
+
+<div class="container-fluid bg-3 text-center">    
+    <div class="row">
+            <div class="col-sm-3">
+                <p>Ash</p>
+                <img src="static\ash.png" class="img-responsive" style="width:100%" alt="Ash">
+            </div>
+                <div class="col-sm-3"> 
+                <p>Bangalore</p>
+                <img src="static\bangalore.png" class="img-responsive" style="width:100%" alt="Bangalore">
+                </div>
+            <div class="col-sm-3"> 
+                <p>Bloodhound</p>
+                <img src="static\bloodhound.png" class="img-responsive" style="width:100%" alt="Bloodhound">
+            </div>
+            <div class="col-sm-3">
+            <p>Catalyst</p>
+            <img src="static\catalyst.png" class="img-responsive" style="width:100%" alt="Catalyst">
+            </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <p>Caustic</p>
+                <img src="static\caustic.png" class="img-responsive" style="width:100%" alt="Caustic">
+            </div>
+            <div class="col-sm-3">
+                <p>Crypto</p>
+                <img src="static\crypto.png" class="img-responsive" style="width:100%" alt="Crypto">
+            </div>
+            <div class="col-sm-3">
+                <p>Fuse</p>
+                <img src="static\fuse.png" class="img-responsive" style="width:100%" alt="Fuse">
+            </div>
+            <div class="col-sm-3">
+                <p>Gibraltar</p>
+                <img src="static\gibraltar.png" class="img-responsive" style="width:100%" alt="Gibraltar">
+            </div>
+            <div class="col-sm-3">
+                <p>Horizon</p>
+                <img src="static\horizon.png" class="img-responsive" style="width:100%" alt="Horizon">
+            </div>
+            <div class="col-sm-3">
+                <p>Lifeline</p>
+                <img src="static\lifeline.png" class="img-responsive" style="width:100%" alt="Lifeline">
+            </div>
+            <div class="col-sm-3">
+                <p>Loba</p>
+                <img src="static\loba.png" class="img-responsive" style="width:100%" alt="Loba">
+            </div>
+            <div class="col-sm-3">
+                <p>Mad Maggie</p>
+                <img src="static\maggie.png" class="img-responsive" style="width:100%" alt="Mad Maggie">
+            </div>
+            <div class="col-sm-3">
+                <p>Mirage</p>
+                <img src="static\mirage.png" class="img-responsive" style="width:100%" alt="Mirage">
+            </div>
+            <div class="col-sm-3">
+                <p>Newcastle</p>
+                <img src="static\newcastle.png" class="img-responsive" style="width:100%" alt="Newcastle">
+            </div>
+            <div class="col-sm-3">
+                <p>Octane</p>
+                <img src="static\octane.png" class="img-responsive" style="width:100%" alt="Octane">
+            </div>
+            <div class="col-sm-3">
+                <p>Pathfinder</p>
+                <img src="static\pathfinder.png" class="img-responsive" style="width:100%" alt="Pathfinder">
+            </div>
+            <div class="col-sm-3">
+                <p>Rampart</p>
+                <img src="static\rampart.png" class="img-responsive" style="width:100%" alt="Rampart">
+            </div>
+            <div class="col-sm-3">
+                <p>Revenant</p>
+                <img src="static\revenant.png" class="img-responsive" style="width:100%" alt="Revenant">
+            </div>
+            <div class="col-sm-3">
+                <p>Seer</p>
+                <img src="static\seer.png" class="img-responsive" style="width:100%" alt="Seer">
+            </div>
+            <div class="col-sm-3">
+                <p>Valkyrie</p>
+                <img src="static\valkyrie.png" class="img-responsive" style="width:100%" alt="Valkyrie">
+            </div>
+            <div class="col-sm-3">
+                <p>Vantage</p>
+                <img src="static\vantage.png" class="img-responsive" style="width:100%" alt="Vantage">
+            </div>
+            <div class="col-sm-3">
+                <p>Wattson</p>
+                <img src="static\wattson.png" class="img-responsive" style="width:100%" alt="Wattson">
+            </div>
+            <div class="col-sm-3">
+                <p>Wraith</p>
+                <img src="static\wraith.png" class="img-responsive" style="width:100%" alt="Wraith">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<a href="https://www.freepik.com/free-photo/red-wall-with-white-spray-background_17197879.htm#query=red%20and%20white%20background&position=1&from_view=search&track=ais">Image by vector_corp</a> on Freepik
+</body>
+</html>
